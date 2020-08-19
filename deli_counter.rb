@@ -8,10 +8,9 @@ def line(array)
     array.each do |name|
       nuarray.push("#{counter}. #{name}")
       counter += 1 
-      
-    end 
-    puts "The line is currently: #{nuarray.join(" ")}"
-  else
+      end 
+      puts "The line is currently: #{nuarray.join(" ")}"
+     else
     puts "The line is currently empty."
   end
 end
@@ -24,8 +23,8 @@ def line_simple(array)
   array.each.with_index(1) do |value, indexemus|  
   
     current_line << " #{indexemus}. #{value},"    
-   
-  end 
+   end 
+  
   puts current_line
 end 
   
@@ -42,6 +41,7 @@ take_a_number(katz_deli, "Fyvish")
 def now_serving(line)
   if line.length == 0 # could say: "if deli.empty?"
     puts"There is nobody waiting to be served!"
+    
   else
     puts "Currently serving #{line[0]}."
     line.shift 
