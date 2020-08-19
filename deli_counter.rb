@@ -24,8 +24,6 @@ take_a_number(katz_deli, "Tom")
 take_a_number(katz_deli, "Alan")
 end 
  
-line(katz_deli)
-
 
 def now_serving(array)
   if array.empty? == true 
